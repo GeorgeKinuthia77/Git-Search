@@ -13,9 +13,9 @@ Keys in a name	Input field accepts the data
 Clicks search	User is loaded	Profile and repositories are displayed
 Clicks view profile	Profile is loaded	User is redirected to github.com
 
-## Build
+## Develpment serve
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
 
 ## Running unit tests
 
