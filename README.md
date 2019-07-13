@@ -15,7 +15,11 @@ Clicks view profile	Profile is loaded	User is redirected to github.com
 
 ## Develpment serve
 
-Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+Github Link :https://github.com/GeorgeKinuthia77/Git-Search
+
+Live Link:
+
+
 
 ## Running unit tests
 
