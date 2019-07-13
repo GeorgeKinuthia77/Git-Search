@@ -6,9 +6,12 @@ This project was generated with [Angular CLI] version 8.1.0.
 
 George Kinuthia(13/7/2019)
 
-## Code scaffolding
+## Behaviour Driven Development
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Input	Behaviour	Outcome
+Keys in a name	Input field accepts the data
+Clicks search	User is loaded	Profile and repositories are displayed
+Clicks view profile	Profile is loaded	User is redirected to github.com
 
 ## Build
 
