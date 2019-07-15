@@ -1,5 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+/* You can
+ add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
 
-body {
-    background-color: black;
+.repobox {
+  background-color: lightgrey;
+  border-radius: rgb(255, 0, 0);
+  font-size: 1em;
+  font-style: oblique;
+  opacity: .7;
+}
+body{
+  background-image: url("../backficha.jpeg");
+  text-align: center;
+
+}
+
+
+.brightfont {
+  color: azure;
+  font-family: 'Amarante', cursive;
+  font-size: 2em;
 }

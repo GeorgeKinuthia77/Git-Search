@@ -1,34 +1,38 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+
+import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { UserProfileComponent } from './components/user-profile/user-profile.component';
-import { HttpClientModule } from '@angular/common/http';
-import { NotFoundComponent } from './components/not-found/not-found.component';
-import { UppercasePipe } from './pipes/uppercase.pipe';
-import { HighlightDirective } from './directives/highlight.directive';
+import { SearchComponent } from './search/search.component';
+import { SearchService } from './search.service';
+import { DesigningComponent } from './designing/designing.component';
+import { RepoboxDirective } from './repobox.directive';
+import { DateCheckPipe } from './date-check.pipe';
+const routes: Routes = [
+
+];
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
-    UserProfileComponent,
-    NotFoundComponent,
-    UppercasePipe,
-    HighlightDirective
+    SearchComponent,
+    DesigningComponent,
+    RepoboxDirective,
+    DateCheckPipe
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule,
-    NgbModule
+    RouterModule
+
   ],
-  providers: [],
+  providers: [SearchService],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }

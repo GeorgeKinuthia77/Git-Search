@@ -1,4 +1,16 @@
-<app-navbar></app-navbar>
 <div class="container">
-  <router-outlet></router-outlet>
+  <nav class="nav">
+    <div class="navbar">
+      <a routerLink='/Home' routerLinkActive='active'>Home</a>
+    </div>
+    <div class="navbar">
+      <a routerLink='/Search' routerLinkActive='active'>Search</a>
+    </div>
+  </nav>
 </div>
+<div class="container">
+   <app-search></app-search>
+</div>
+
+
+<!-- <router-outlet></router-outlet> -->

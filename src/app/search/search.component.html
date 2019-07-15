@@ -1,0 +1,56 @@
+<div class="container-fluid">
+    <body>
+        <div col-sm-6>
+            <h3 class="text-center brightfont"><br> <span class="Git-Search">Git-Search</span>
+            </h3>
+        </div>
+        <div class=" row" style="padding: 2%;">
+            <div class="col-sm-3">
+                <form autocomplete="off">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Enter Username" [(ngModel)]='username'
+                            name='username'>
+                        <button class="btn btn-success" type="submit" (click)="findUsers()">Search / </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+
+            <div style="color:azure;font-size: 1.3em; font-family: 'Amarante', cursive;" class="col-sm-4">
+                <p>Github Username : {{user.login}}</p>
+                <p>public Repos : {{user.public_repos}}</p>
+                <p>Followers : {{user.followers}}</p>
+                <p>Following : {{user.following}}</p>
+                <p>Created at : {{user.created_at}}
+                </p>
+            </div>
+            <br>
+            <hr>
+        </div>
+
+        <hr size=4>
+
+        <div class="row">
+            <div class="repobox text-center">
+                <hr size=3>
+                <p><strong
+                        style="font-size:2em; font-family: 'Amarante', cursive; text-decoration: underline-above">Existing Repositories
+                    </strong>
+                </p>
+                <hr>
+                <div >
+                    <li type="1" *ngFor='let repo of repositories'>
+                        <a href="{{repo.html_url}}">
+                            <p class="text-center">Name : {{repo.name}}
+                            </p>
+                        </a>
+                        <p class="descriptionbox"> <span style="font-family: 'Amarante', cursive;">Description :
+                            </span> <span> {{ repo.description }}</span>
+                        </p>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </body>
+</div>

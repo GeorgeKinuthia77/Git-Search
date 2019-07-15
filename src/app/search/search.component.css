@@ -1,0 +1,14 @@
+.Git-Search{
+    font-variant-caps: titling-caps;
+    color: rgb(18, 194, 18);
+    font-size: 1.7em;
+    text-decoration: line-through;
+}
+.descriptionbox{
+    border: 5px 5px 5px solid blue;
+    background-color:rgb(169, 235, 94);
+    height: 150px;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 10%;
+}
