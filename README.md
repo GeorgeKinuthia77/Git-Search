@@ -17,7 +17,7 @@ Clicks view profile	Profile is loaded	User is redirected to github.com
 
 Github Link :https://github.com/GeorgeKinuthia77/Git-Search
 
-Live Link:
+Live Link:https://george-gh-pages.netlify.com/
 
 
 
